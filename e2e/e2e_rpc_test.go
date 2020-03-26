@@ -304,7 +304,7 @@ func TestSetTimeOut(t *testing.T) {
 
 func TestSubscribeEvent(t *testing.T) {
 	c := defaultClient()
-	query := "tm.event = 'CompleteProposal'"
+	query := "tm.event = 'NewBlock'"
 	_, err := tmquery.New(query)
 	assert.NoError(t, err)
 	out, err := c.Subscribe(query, 10)

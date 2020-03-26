@@ -21,3 +21,4 @@ test/
 .vscode/*.json
 bnc-go-sdk
 /mock/*.txt
+*.json
